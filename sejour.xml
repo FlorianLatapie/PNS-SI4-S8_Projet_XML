@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AGENCE>
+<SEJOURS>
+	<SEJOUR>
+		<NOM>Sejour Linguistique à Singapour</NOM>
+		<OFFRE>
+			<DESCRITPION></DESCRITPION>
+			<LANGUES>
+				<LANGUE>Chinois</LANGUE>
+			</LANGUES>
+			<DESTINATION>Singapour</DESTINATION>
+			<COURS>
+				<NOM>Chinois Debutant</NOM>
+				<ENSEIGNANTS>
+					<ENSEIGNANT nom="Jean" prenom="Hugues">
+						<EMAIL>jean.hugues@gmail.com</EMAIL>
+						<TELEPHONE>+33789012384</TELEPHONE>
+					</ENSEIGNANT>
+					<ENSEIGNANT nom="Yun" prenom="Alice">
+						<EMAIL>alice.yun@gmail.com</EMAIL>
+						<TELEPHONE>+33712345678</TELEPHONE>
+					</ENSEIGNANT>
+				</ENSEIGNANTS>
+				<NIVEAU_LANGUE>A2</NIVEAU_LANGUE>
+			</COURS>
+			<TEST_LANGUE>Test du niveau A2 en Chinois à la fin du séjour</TEST_LANGUE>
+		</OFFRE>
+		<DATES>
+			<DEBUT>01/01/2023</DEBUT>
+			<FIN>25/06/2023</FIN>
+		</DATES>
+		<PRIX>360.0</PRIX>
+	</SEJOUR>
+</SEJOURS>
+
+
+<CLIENTS></CLIENTS>
+<ENCADRANTS></ENCADRANTS>
+
+</AGENCE>
