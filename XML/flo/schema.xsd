@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:complexType name="Identite">
+    <!--<xs:complexType name="Identite">
         <xs:attribute name="nom" type="xs:string"/>
         <xs:attribute name="prenom" type="xs:string"/>
     </xs:complexType>
@@ -73,11 +73,11 @@
         <xs:attribute name="fin" type="xs:date"/>
     </xs:complexType>
 
-    <!--
+
     <OffreSejour id="123" langue="trouduc" prix="123">
         <Activite id="123" nom="trouduc" type="Sport"/>
     </OffreSejour>
-    -->
+
 
     <xs:complexType name="OffreSejour">
         <xs:sequence>
@@ -108,8 +108,9 @@
         <xs:attribute name="id" type="xs:ID"/>
         <xs:attribute name="offre" type="xs:IDREF"/>
         <xs:attribute name="dates" type="xs:IDREF"/>
-    </xs:complexType>
+    </xs:complexType>-->
 
+    <!--
     <xs:complexType name="Root">
         <xs:sequence>
             <xs:element name="client" type="Client" minOccurs="0" maxOccurs="unbounded"/>
@@ -120,4 +121,5 @@
     </xs:complexType>
 
     <xs:element name="root" type="Root"/>
+    -->
 </xs:schema>

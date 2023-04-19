@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="agence">
+    <!--<xs:element name="agence">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="sejours" maxOccurs="unbounded" type="sejours"/>
@@ -9,7 +9,7 @@
                 <xs:element name="encadrants" maxOccurs="unbounded" type="encadrantsType"/>
             </xs:sequence>
         </xs:complexType>
-    </xs:element>
+    </xs:element>-->
 
     <!--Sejours-->
 
@@ -34,7 +34,7 @@
     </xs:complexType>
 
     <!--Client-->
-    <xs:complexType name="clientsType">
+    <!--<xs:complexType name="clientsType">
         <xs:sequence>
             <xs:element name="client" type="clientType" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -48,10 +48,10 @@
         <xs:attribute name="nom" type="xs:string"/>
         <xs:attribute name="prenom" type="xs:string"/>
         <xs:attribute name="TrancheDAge" type="xs:string"/>
-    </xs:complexType>
+    </xs:complexType>-->
 
     <!--Encadrants-->
-    <xs:complexType name="encadrantsType">
+   <!-- <xs:complexType name="encadrantsType">
         <xs:sequence>
             <xs:element name="accompagnateurs" type="accompagnateursType"/>
             <xs:element name="enseignants" type="enseignantsType"/>
@@ -86,7 +86,7 @@
         </xs:sequence>
         <xs:attribute name="nom" type="xs:string"/>
         <xs:attribute name="prenom" type="xs:string"/>
-    </xs:complexType>
+    </xs:complexType>-->
 
     <!--Offres-->
 
@@ -102,7 +102,7 @@
     </xs:complexType>
 
     <!--Langues-->
-    <xs:complexType name="languesType">
+    <!--<xs:complexType name="languesType">
         <xs:sequence>
             <xs:element name="langue" type="langueType" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -112,11 +112,11 @@
         <xs:sequence>
             <xs:element name="langue" type="xs:string"/>
         </xs:sequence>
-    </xs:complexType>
+    </xs:complexType>-->
 
     <!--Activites-->
 
-    <xs:complexType name="activitesType">
+    <!--<xs:complexType name="activitesType">
         <xs:sequence>
             <xs:element name="activites_sportive" type="activites_sportivesType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="activites_culturelle" type="activites_culturelleType" minOccurs="0"
@@ -134,27 +134,28 @@
         <xs:sequence>
             <xs:element name="activite_sportive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-    </xs:complexType>
+    </xs:complexType>-->
 
     <!-- Date de sejour -->
-    <xs:complexType name="dateType">
+    <!--<xs:complexType name="dateType">
         <xs:sequence>
             <xs:element name="debut" type="xs:date"/>
             <xs:element name="fin" type="xs:date"/>
         </xs:sequence>
-    </xs:complexType>
+    </xs:complexType>-->
 
     <!--Cours-->
-    <xs:complexType name="coursType">
+    <!--<xs:complexType name="coursType">
         <xs:sequence>
             <xs:element name="nom" type="xs:string"/>
             <xs:element name="enseignants" type="enseignantsType"/>
             <xs:element name="niveau_langue" type="niveau_langueType"/>
         </xs:sequence>
     </xs:complexType>
+    -->
 
     <!--Type de Public-->
-    <xs:simpleType name="type_publicType">
+    <!--<xs:simpleType name="type_publicType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Adultes"/>
             <xs:enumeration value="Enfants"/>
@@ -163,10 +164,10 @@
             <xs:enumeration value="Etudiants"/>
             <xs:enumeration value="Professionnel"/>
         </xs:restriction>
-    </xs:simpleType>
+    </xs:simpleType>-->
 
     <!--Type de sejour-->
-    <xs:simpleType name="type_sejourType">
+    <!--<xs:simpleType name="type_sejourType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Groupe scolaire"/>
             <xs:enumeration value="Immersion en famille"/>
@@ -177,10 +178,10 @@
             <xs:enumeration value="Job"/>
             <xs:enumeration value="Stage"/>
         </xs:restriction>
-    </xs:simpleType>
+    </xs:simpleType>-->
 
     <!--Niveau de Langue-->
-    <xs:simpleType name="niveau_langueType">
+    <!--<xs:simpleType name="niveau_langueType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="A1"/>
             <xs:enumeration value="A2"/>
@@ -189,5 +190,5 @@
             <xs:enumeration value="C1"/>
             <xs:enumeration value="C2"/>
         </xs:restriction>
-    </xs:simpleType>
+    </xs:simpleType>-->
 </xs:schema>
