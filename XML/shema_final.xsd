@@ -129,13 +129,13 @@
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">
         <xs:sequence>
-            <xs:element name="dates" type="DureeType" minOccurs="1" maxOccurs="unbounded"/>
             <xs:element name="activites" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
             <xs:element name="langues" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
         <xs:attribute name="nom" type="xs:string"/>
         <xs:attribute name="type" type="TypeOffreType"/>
+        <xs:attribute name="duree" type="DureeType"/>
     </xs:complexType>
 
     <xs:simpleType name="TypeOffreType">

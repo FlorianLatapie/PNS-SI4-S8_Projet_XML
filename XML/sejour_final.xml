@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shema_final.xsd">
+    <client type="Adulte" id="c1" nom="Doe" prenom="John"/>
+    <client type="Enfant" id="c2" nom="Doe" prenom="Jane"/>
+    <encadrant id="e1" nom="Smith" prenom="Alice"/>
+    <offre id="o1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14">
+        <activites id="act1" nom="Activite1" typeActivite="TypeActivite1"/>
+        <activites id="act2" nom="Activite2" typeActivite="TypeActivite2"/>
+        <langues id="lang1" nom="Langue1" niveau="NiveauLangue1"/>
+        <langues id="lang2" nom="Langue2" niveau="NiveauLangue2"/>
+    </offre>
+    <sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1" idEncadrant="e1" idOffre="o1"/>
+    <activite id="act1" nom="Activite1" typeActivite="TypeActivite1"/>
+    <activite id="act2" nom="Activite2" typeActivite="TypeActivite2"/>
+</agence>
