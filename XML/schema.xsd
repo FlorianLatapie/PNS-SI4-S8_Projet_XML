@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="agence">
+    <xs:element name="agence">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="sejours" maxOccurs="unbounded" type="sejours"/>
-				<xs:element name="clients" maxOccurs="unbounded" type="clientsType"/>
-				<xs:element name="encadrants" maxOccurs="unbounded" type="encadrantsType"/>
+                <xs:element name="clients" maxOccurs="unbounded" type="clientsType"/>
+                <xs:element name="encadrants" maxOccurs="unbounded" type="encadrantsType"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-	
-	<!--Sejours-->
+
+    <!--Sejours-->
 
     <xs:element name="sejours">
         <xs:complexType>
@@ -23,60 +23,60 @@
 
     <xs:complexType name="sejourType">
         <xs:sequence>
-			<xs:element name="nom_annonce" type="xs:string"/>
+            <xs:element name="nom_annonce" type="xs:string"/>
             <xs:element name="offre" type="offreType"/>
             <xs:element name="accompagnateurs" type="accompagnateursType" minOccurs="0"/>
             <xs:element name="dates" type="dateType" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="prix" type="xs:float"/>
+            <xs:element name="prix" type="xs:float"/>
         </xs:sequence>
-        <xs:attribute name="type_public" type="type_publicType" />
-        <xs:attribute name="type_sejour" type="type_sejourType" />
+        <xs:attribute name="type_public" type="type_publicType"/>
+        <xs:attribute name="type_sejour" type="type_sejourType"/>
     </xs:complexType>
 
-	<!--Client-->
+    <!--Client-->
     <xs:complexType name="clientsType">
         <xs:sequence>
-            <xs:element name="client" type="clientType" maxOccurs="unbounded" />
+            <xs:element name="client" type="clientType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
-	<xs:complexType name="clientType">
+    <xs:complexType name="clientType">
         <xs:sequence>
             <xs:element name="email" type="xs:string"/>
             <xs:element name="telephone" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute name="nom" type="xs:string" />
-        <xs:attribute name="prenom" type="xs:string" />
-		<xs:attribute name="TrancheDAge" type="xs:string"/>
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="prenom" type="xs:string"/>
+        <xs:attribute name="TrancheDAge" type="xs:string"/>
     </xs:complexType>
-	
-	<!--Encadrants-->
-	<xs:complexType name="encadrantsType">
-	<xs:sequence>
+
+    <!--Encadrants-->
+    <xs:complexType name="encadrantsType">
+        <xs:sequence>
             <xs:element name="accompagnateurs" type="accompagnateursType"/>
             <xs:element name="enseignants" type="enseignantsType"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<xs:complexType name="enseignantsType">
-	<xs:sequence>
+
+    <xs:complexType name="enseignantsType">
+        <xs:sequence>
             <xs:element name="enseignants" type="enseignantType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<xs:complexType name="accompagnateursType">
-	<xs:sequence>
+
+    <xs:complexType name="accompagnateursType">
+        <xs:sequence>
             <xs:element name="accompagnateurs" type="accompagnateurType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-	
+
     <xs:complexType name="accompagnateurType">
         <xs:sequence>
             <xs:element name="email" type="xs:string"/>
             <xs:element name="telephone" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute name="nom" type="xs:string" />
-        <xs:attribute name="prenom" type="xs:string" />
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="prenom" type="xs:string"/>
     </xs:complexType>
 
     <xs:complexType name="enseignantType">
@@ -84,42 +84,43 @@
             <xs:element name="email" type="xs:string"/>
             <xs:element name="telephone" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute name="nom" type="xs:string" />
-        <xs:attribute name="prenom" type="xs:string" />
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="prenom" type="xs:string"/>
     </xs:complexType>
 
-	<!--Offres-->
+    <!--Offres-->
 
     <xs:complexType name="offreType">
         <xs:sequence>
-			<xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
             <xs:element name="langues" type="languesType"/>
             <xs:element name="destination" type="xs:string"/>
-            <xs:element name="cours" type="xs:coursType" />
+            <xs:element name="cours" type="xs:coursType"/>
             <xs:element name="test_langue" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="activites" type="activitesType"/>
+            <xs:element name="activites" type="activitesType"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<!--Langues-->
-	<xs:complexType name="languesType">
+
+    <!--Langues-->
+    <xs:complexType name="languesType">
         <xs:sequence>
             <xs:element name="langue" type="langueType" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<xs:complexType name="langueType">
+
+    <xs:complexType name="langueType">
         <xs:sequence>
             <xs:element name="langue" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
-	<!--Activites-->
+    <!--Activites-->
 
-	<xs:complexType name="activitesType">
+    <xs:complexType name="activitesType">
         <xs:sequence>
             <xs:element name="activites_sportive" type="activites_sportivesType" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="activites_culturelle" type="activites_culturelleType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="activites_culturelle" type="activites_culturelleType" minOccurs="0"
+                        maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -128,8 +129,8 @@
             <xs:element name="activite_sportive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<xs:complexType name="activites_culturelleType">
+
+    <xs:complexType name="activites_culturelleType">
         <xs:sequence>
             <xs:element name="activite_sportive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -142,51 +143,51 @@
             <xs:element name="fin" type="xs:date"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<!--Cours-->
-	<xs:complexType name="coursType">
+
+    <!--Cours-->
+    <xs:complexType name="coursType">
         <xs:sequence>
-			<xs:element name="nom" type="xs:string"/>
+            <xs:element name="nom" type="xs:string"/>
             <xs:element name="enseignants" type="enseignantsType"/>
-			<xs:element name="niveau_langue" type="niveau_langueType"/>
+            <xs:element name="niveau_langue" type="niveau_langueType"/>
         </xs:sequence>
     </xs:complexType>
-	
-	<!--Type de Public-->
-	 <xs:simpleType name="type_publicType">
+
+    <!--Type de Public-->
+    <xs:simpleType name="type_publicType">
         <xs:restriction base="xs:string">
-           <xs:enumeration value="Adultes" />
-            <xs:enumeration value="Enfants" />
-            <xs:enumeration value="Adolescents" />
-            <xs:enumeration value="Familles" />
+            <xs:enumeration value="Adultes"/>
+            <xs:enumeration value="Enfants"/>
+            <xs:enumeration value="Adolescents"/>
+            <xs:enumeration value="Familles"/>
             <xs:enumeration value="Etudiants"/>
-			<xs:enumeration value="Professionnel"/>
+            <xs:enumeration value="Professionnel"/>
         </xs:restriction>
     </xs:simpleType>
-	
-	<!--Type de sejour-->
-	<xs:simpleType name="type_sejourType">
+
+    <!--Type de sejour-->
+    <xs:simpleType name="type_sejourType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Groupe scolaire" />
-            <xs:enumeration value="Immersion en famille" />
-            <xs:enumeration value="Tourisme" />
-            <xs:enumeration value="Colonie de vacance" />
-			<xs:enumeration value="Ecole de langue" />
-			<xs:enumeration value="Au pair" />
-			<xs:enumeration value="Job" />
-			<xs:enumeration value="Stage" />
+            <xs:enumeration value="Groupe scolaire"/>
+            <xs:enumeration value="Immersion en famille"/>
+            <xs:enumeration value="Tourisme"/>
+            <xs:enumeration value="Colonie de vacance"/>
+            <xs:enumeration value="Ecole de langue"/>
+            <xs:enumeration value="Au pair"/>
+            <xs:enumeration value="Job"/>
+            <xs:enumeration value="Stage"/>
         </xs:restriction>
     </xs:simpleType>
-	
-	<!--Niveau de Langue-->
-	<xs:simpleType name="niveau_langueType">
+
+    <!--Niveau de Langue-->
+    <xs:simpleType name="niveau_langueType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="A1" />
-            <xs:enumeration value="A2" />
-            <xs:enumeration value="B1" />
-            <xs:enumeration value="B2" />
-			<xs:enumeration value="C1" />
-			<xs:enumeration value="C2" />
+            <xs:enumeration value="A1"/>
+            <xs:enumeration value="A2"/>
+            <xs:enumeration value="B1"/>
+            <xs:enumeration value="B2"/>
+            <xs:enumeration value="C1"/>
+            <xs:enumeration value="C2"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
