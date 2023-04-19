@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="Identite">
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="prenom" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="Client">
+        <xs:complexContent>
+            <xs:extension base="Identite">
+                <xs:attribute name="id" type="xs:ID"/>
+                <xs:attribute name="type" type="TypeClient"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="TypeClient">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Adulte"/>
+            <xs:enumeration value="Famille"/>
+            <xs:enumeration value="Enfant"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Accompagnateur">
+        <xs:complexContent>
+            <xs:extension base="Identite">
+                <xs:attribute name="id" type="xs:ID"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="Enseignant">
+        <xs:complexContent>
+            <xs:extension base="Identite">
+                <xs:attribute name="id" type="xs:ID"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="TypeActivite">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Sport"/>
+            <xs:enumeration value="Culturel"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Activite">
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="type" type="TypeActivite"/>
+    </xs:complexType>
+
+    <xs:simpleType name="Niveau">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A1"/>
+            <xs:enumeration value="A2"/>
+            <xs:enumeration value="B1"/>
+            <xs:enumeration value="B2"/>
+            <xs:enumeration value="C1"/>
+            <xs:enumeration value="C2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="CoursLangue">
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="niveau" type="Niveau"/>
+        <xs:attribute name="enseignant" type="xs:IDREF"/>
+    </xs:complexType>
+
+    <xs:complexType name="DateSejour">
+        <xs:attribute name="debut" type="xs:date"/>
+        <xs:attribute name="fin" type="xs:date"/>
+    </xs:complexType>
+
+    <!--
+    <OffreSejour id="123" langue="trouduc" prix="123">
+        <Activite id="123" nom="trouduc" type="Sport"/>
+    </OffreSejour>
+    -->
+
+    <xs:complexType name="OffreSejour">
+        <xs:sequence>
+            <xs:element name="activite" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="datesProposee" type="xs:IDREF" maxOccurs="unbounded"/>
+            <xs:element name="cours" type="xs:IDREF" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="langue" type="xs:string"/>
+        <xs:attribute name="destination" type="xs:string"/>
+        <xs:attribute name="prix" type="xs:integer"/>
+        <xs:attribute name="type" type="TypeOffreSejour"/>
+    </xs:complexType>
+
+    <xs:simpleType name="TypeOffreSejour">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Colonie"/>
+            <xs:enumeration value="GroupeScolaire"/>
+            <xs:enumeration value="Immersion"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Sejour">
+        <xs:sequence>
+            <xs:element name="clients" type="Client" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="accompagnateurs" type="Accompagnateur" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="offre" type="xs:IDREF"/>
+        <xs:attribute name="dates" type="xs:IDREF"/>
+    </xs:complexType>
+
+    <xs:complexType name="Root">
+        <xs:sequence>
+            <xs:element name="client" type="Client" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="accompagnateur" type="Accompagnateur" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="offre" type="OffreSejour" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="sejour" type="Sejour" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="root" type="Root"/>
+</xs:schema>
