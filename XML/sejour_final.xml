@@ -136,6 +136,32 @@
 			<nbMaxParticipants>35</nbMaxParticipants>
 			<prix>650</prix>
 		</offre>
+		
+		<sejour id="s4" idOffre="o4">
+			<clients>
+				<client id="c5"/>
+			</clients>
+			<encadrants>
+				<accompagnateur id="act001"></accompagnateur>
+				<enseignant id="1003"></enseignant>
+			</encadrants>
+		</sejour> 
+		
+		<offre id="o4">
+			<nom>Voyage Scolaire à Paris</nom>
+			<type>Groupe scolaire</type>
+			<description>Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les monuments historiques de notre pays. </description>
+			<activite id="act16" nom="Visite de la tour Eiffel" typeActivite="Culture"/>
+			<langue id="fr3" nom="Français" niveau="B1"/>
+			<duree>
+				<debut>2023-11-18</debut>
+				<fin>2023-12-02</fin>
+			</duree>
+			<destination>Paris</destination>
+			<trancheAge>Enfant</trancheAge>
+			<nbMaxParticipants>30</nbMaxParticipants>
+			<prix>450</prix>
+		</offre>
 	</voyages>
     
 </agence>
