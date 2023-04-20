@@ -5,7 +5,7 @@
     <xs:complexType name="AgenceType">
         <xs:sequence>
             <xs:element name="clients" type="Clients"/>
-            <xs:element name="encadrant" type="EncadrantType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="encadrants" type="encadrantsType" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="voyages" type="voyagesType"></xs:element>
         </xs:sequence>
     </xs:complexType>
@@ -26,6 +26,7 @@
 
 	<xs:complexType name="encadrantsType">
 		<xs:sequence>
+		
 			<xs:element name="encadrant" type="EncadrantType" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
