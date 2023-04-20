@@ -4,13 +4,31 @@
     <xs:element name="agence" type="AgenceType"/>
     <xs:complexType name="AgenceType">
         <xs:sequence>
-            <xs:element name="client" type="ClientType" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="encadrant" type="EncadrantsType" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="offre" type="OffreSejourType" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="sejour" type="SejourType" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="activite" type="ActiviteType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="clients" type="Clients"/>
+            <xs:element name="encadrant" type="EncadrantType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="voyages" type="voyagesType"></xs:element>
         </xs:sequence>
     </xs:complexType>
+
+	<!--Conteneurs d'elements-->
+	<xs:complexType name="Clients">
+		<xs:sequence>
+			<xs:element name="client" type="ClientType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="voyagesType">
+		<xs:sequence>
+			<xs:element name="offre" type="OffreSejourType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="sejour" type="SejourType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="encadrantsType">
+		<xs:sequence>
+			<xs:element name="encadrant" type="EncadrantType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
 
     <!-- # identités et personnes -->
     <xs:complexType name="IdentiteType">
@@ -42,7 +60,7 @@
     </xs:simpleType>
 
     <!-- ## encadrant -->
-    <xs:complexType name="EncadrantsType">
+    <xs:complexType name="EncadrantType">
         <xs:complexContent>
             <xs:extension base="IdentiteType">
             </xs:extension>
@@ -113,6 +131,7 @@
     </xs:complexType>
 
     <!-- ## séjour -->
+	<!--Un séjour est correspond à l'ensemble des personnes qui ont payés pour une offre-->
     <xs:complexType name="SejourType">
         <xs:sequence>
             <xs:element name="clients" type="ClientType" minOccurs="1" maxOccurs="unbounded"/>
@@ -124,18 +143,21 @@
         <xs:attribute name="dates" type="xs:IDREF"/>
         <xs:attribute name="nbMaxParticipants" type="xs:int"/>
         <xs:attribute name="description" type="xs:string"/>
+		<xs:attribute name="idOffre" type="xs:IDREF"/>
     </xs:complexType>
 
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">
         <xs:sequence>
-            <xs:element name="activites" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="activite" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
             <xs:element name="langues" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
         <xs:attribute name="nom" type="xs:string"/>
         <xs:attribute name="type" type="TypeOffreType"/>
         <xs:attribute name="duree" type="DureeType"/>
+		<xs:attribute name="description" type="xs:string"/>
+		<xs:attribute name="prix" type="xs:int"/>
     </xs:complexType>
 
     <xs:simpleType name="TypeOffreType">
