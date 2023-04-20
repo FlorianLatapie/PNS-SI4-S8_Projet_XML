@@ -24,7 +24,7 @@
     
 	<!--voyages-->
 	<voyages>
-		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1 c2 c3" idEncadrant="e1" idOffre="o1">
+		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1 c2 c3" idEncadrant="e1" nbMaxParticipants="30" idOffre="o1">
 			<clients>
 				<client id="c1"/>
 				<client id="c2"/>
@@ -34,10 +34,12 @@
 				<accompagnateur id="act001"></accompagnateur>
 				<enseignant id="1003"></enseignant>
 			</encadrants>
-			<trancheAge>Enfant</trancheAge>
 		</sejour>
 		
-		<offre id="o1" nom="Séjour au Bahamas pour les enfants" type="Colonie de vacances" description="Une super colonie de vacances aux Bahamas pour les enfants !" prix="350">
+		<offre id="o1">
+			<nom>Séjour au Bahamas pour les enfants</nom>
+			<type>Colonie de vacances</type>
+			<description>Une super colonie de vacances aux Bahamas pour les enfants !</description>
 			<activite id="act1" nom="Piscine" typeActivite="Sport"/>
 			<activite id="act2" nom="Degustation de plats locaux" typeActivite="Culture"/>
 			<langue id="lang1" nom="Français" niveau="A1"/>
@@ -46,6 +48,10 @@
 				<debut>2023-05-01</debut>
 				<fin>2023-05-14</fin>
 			</duree>
+			<destination>Bahamas</destination>
+			<trancheAge>Enfant</trancheAge>
+			<nbMaxParticipants>45</nbMaxParticipants>
+			<prix>350</prix>
 		</offre>
 	</voyages>
     

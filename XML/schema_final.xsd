@@ -137,30 +137,26 @@
         <xs:sequence>
             <xs:element name="clients" type="Clients"/>
             <xs:element name="encadrants" type="encadrantsType"/>
-            <xs:element name="trancheAge" type="ClasseDAgeType" minOccurs="1" maxOccurs="unbounded"/>
-			<xs:element name="destination" type="xs:string"></xs:element>
 		</xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
-        <xs:attribute name="offre" type="xs:IDREF"/>
-        <xs:attribute name="dates" type="xs:IDREF"/>
-        <xs:attribute name="nbMaxParticipants" type="xs:int"/>
-        <xs:attribute name="description" type="xs:string"/>
 		<xs:attribute name="idOffre" type="xs:IDREF"/>
     </xs:complexType>
 
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">
         <xs:sequence>
-            <xs:element name="activite" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="nom" type="xs:string"/>
+			<xs:element name="type" type="TypeOffreType"/>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="activite" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
             <xs:element name="langue" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
 			<xs:element name="duree" type="DureeType"></xs:element>
 			<xs:element name="destination" type="xs:string"></xs:element>
+            <xs:element name="trancheAge" type="ClasseDAgeType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="nbMaxParticipants" type="xs:int"/>
+			<xs:element name="prix" type="xs:int"/>
 		</xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
-        <xs:attribute name="nom" type="xs:string"/>
-        <xs:attribute name="type" type="TypeOffreType"/>
-		<xs:attribute name="description" type="xs:string"/>
-		<xs:attribute name="prix" type="xs:int"/>
     </xs:complexType>
 
     <xs:simpleType name="TypeOffreType">
