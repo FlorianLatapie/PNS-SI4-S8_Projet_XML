@@ -7,29 +7,32 @@
 		<client type="Adolescent" id="c3" nom="Dupont" prenom="Luc"/>
 	</clients>
 	<!--Encadrants-->
-    <encadrant id="e1" nom="Smith" prenom="Alice"/>
+	<encadrants>
+		<encadrant id="e1" nom="Smith" prenom="Alice"/>
 	
-	<accompagnateur nom="Durand" prenom="Lucie" id="a001">
-		<activites id="act001" nom="Randonnée" typeActivite="Sport"/>
-		<activites id="act002" nom="Cuisine locale" typeActivite="Culture"/>
-		<languesParlees id="l001" nom="Anglais" niveau="B2"/>
-		<languesParlees id="l002" nom="Espagnol" niveau="C1"/>
-	</accompagnateur>
+		<accompagnateur nom="Durand" prenom="Lucie" id="a001">
+			<activites id="act001" nom="Randonnée" typeActivite="Sport"/>
+			<activites id="act002" nom="Cuisine locale" typeActivite="Culture"/>
+			<languesParlees id="l001" nom="Anglais" niveau="B2"/>
+			<languesParlees id="l002" nom="Espagnol" niveau="C1"/>
+		</accompagnateur>
 	
-	<enseignant nom="Martin" prenom="Sophie" id="en001">
-		<coursLangue id="l003" nom="Français" niveau="C2"/>
-		<coursLangue id="l004" nom="Allemand" niveau="B1"/>
-	</enseignant>
+		<enseignant nom="Martin" prenom="Sophie" id="en001">
+			<coursLangue id="l003" nom="Français" niveau="C2"/>
+			<coursLangue id="l004" nom="Allemand" niveau="B1"/>
+		</enseignant>
+	</encadrants>
+    
 
-
+	<voyages>
+		<offre id="o1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14">
+			<activites id="act1" nom="Activite1" typeActivite="TypeActivite1"/>
+			<activites id="act2" nom="Activite2" typeActivite="TypeActivite2"/>
+			<langues id="lang1" nom="Langue1" niveau="NiveauLangue1"/>
+			<langues id="lang2" nom="Langue2" niveau="NiveauLangue2"/>
+		</offre>
+		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1" idEncadrant="e1" idOffre="o1"/>
+	</voyages>
 	
-    <offre id="o1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14">
-        <activites id="act1" nom="Activite1" typeActivite="TypeActivite1"/>
-        <activites id="act2" nom="Activite2" typeActivite="TypeActivite2"/>
-        <langues id="lang1" nom="Langue1" niveau="NiveauLangue1"/>
-        <langues id="lang2" nom="Langue2" niveau="NiveauLangue2"/>
-    </offre>
-    <sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1" idEncadrant="e1" idOffre="o1"/>
-    <activite id="act1" nom="Activite1" typeActivite="TypeActivite1"/>
-    <activite id="act2" nom="Activite2" typeActivite="TypeActivite2"/>
+    
 </agence>
