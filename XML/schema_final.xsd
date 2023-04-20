@@ -135,12 +135,20 @@
 	<!--Un séjour est correspond à l'ensemble des personnes qui ont payés pour une offre-->
     <xs:complexType name="SejourType">
         <xs:sequence>
-            <xs:element name="clients" type="Clients"/>
+            <xs:element name="clientsRefs" type="ClientsRefsType"/>
             <xs:element name="encadrants" type="encadrantsType"/>
 		</xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
 		<xs:attribute name="idOffre" type="xs:IDREF"/>
     </xs:complexType>
+	
+	<xs:complexType name="ClientsRefsType">
+		<xs:attribute name="clientRef" type="clientRefType" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:complexType>
+	
+	<xs:simpleType name="clientRefType">
+		<xs:attribute name="id" type="xs:IDREF"/>
+	</xs:simpleType>
 
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">

@@ -27,10 +27,10 @@
 	<!--voyages-->
 	<voyages>
 		<sejour id="s1" idOffre="o1">
-			<clients>
-				<client id="c2"/>
-				<client id="c3"/>
-			</clients>
+			<clientsRefs>
+				<clientRef id="c2"/>
+				<clientRef id="c3"/>
+			</clientsRefs>
 			<encadrants>
 				<accompagnateur id="act001"></accompagnateur>
 				<enseignant id="1003"></enseignant>
