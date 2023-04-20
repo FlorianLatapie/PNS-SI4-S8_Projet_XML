@@ -4,7 +4,9 @@
 	<clients>
 		<client type="Adulte" id="c1" nom="Doe" prenom="John"/>
 		<client type="Enfant" id="c2" nom="Doe" prenom="Jane"/>
-		<client type="Adolescent" id="c3" nom="Dupont" prenom="Luc"/>
+		<client type="Enfant" id="c3" nom="Doe" prenom="Jules"/>
+		<client type="Adolescent" id="c4" nom="Dupont" prenom="Luc"/>
+		<client type="Senior" id="c5" nom="Thé" prenom="Nicole"/>
 	</clients>
 	<!--Encadrants-->
 	<encadrants>
@@ -24,9 +26,8 @@
     
 	<!--voyages-->
 	<voyages>
-		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1 c2 c3" idEncadrant="e1" nbMaxParticipants="30" idOffre="o1">
+		<sejour id="s1" idOffre="o1">
 			<clients>
-				<client id="c1"/>
 				<client id="c2"/>
 				<client id="c3"/>
 			</clients>
@@ -42,8 +43,8 @@
 			<description>Une super colonie de vacances aux Bahamas pour les enfants !</description>
 			<activite id="act1" nom="Piscine" typeActivite="Sport"/>
 			<activite id="act2" nom="Degustation de plats locaux" typeActivite="Culture"/>
-			<langue id="lang1" nom="Français" niveau="A1"/>
-			<langue id="lang2" nom="Anglais" niveau="A2"/>
+			<langue id="fr1" nom="Français" niveau="A1"/>
+			<langue id="en2" nom="Anglais" niveau="A2"/>
 			<duree>
 				<debut>2023-05-01</debut>
 				<fin>2023-05-14</fin>
@@ -52,6 +53,88 @@
 			<trancheAge>Enfant</trancheAge>
 			<nbMaxParticipants>45</nbMaxParticipants>
 			<prix>350</prix>
+		</offre>
+		
+		<sejour id="s2" idOffre="o2">
+			<clients>
+				<client id="c1"/>
+				<client id="c2"/>
+				<client id="c3"/>
+				<client id="c4"/>
+			</clients>
+			<encadrants>
+				<accompagnateur id="act001"></accompagnateur>
+				<enseignant id="1003"></enseignant>
+			</encadrants>
+		</sejour>
+		
+		<offre id="o2">
+			<nom>Immersion en famille au Pérou</nom>
+			<type>Immersion en famille</type>
+			<description>Vous ne connaissez pas le Pérou ? C'est le moment de le découvrir en famille !</description>
+			<activite id="act3" nom="Randonnée" typeActivite="Sport"/>
+			<activite id="act4" nom="Degustation de plats locaux" typeActivite="Culture"/>
+			<langue id="lang3" nom="Anglais" niveau="B2"/>
+			<duree>
+				<debut>2023-05-21</debut>
+				<fin>2023-06-30</fin>
+			</duree>
+			<destination>Pérou</destination>
+			<trancheAge>Famille</trancheAge>
+			<nbMaxParticipants>45</nbMaxParticipants>
+			<prix>750</prix>
+		</offre>
+		
+		<sejour id="s3" idOffre="o3">
+			<clients>
+				<client id="c4"/>
+			</clients>
+			<encadrants>
+				<accompagnateur id="act001"></accompagnateur>
+				<enseignant id="1003"></enseignant>
+			</encadrants>
+		</sejour>
+		
+		<offre id="o3">
+			<nom>Travail au Pair à Tokyo</nom>
+			<type>Au pair</type>
+			<description>opportinité unique de voyager au Japon ! Avec nos partenaires soyez assurés de pouvoir être bien accueilli et de pouvoir découvrir le pays !</description>
+			<activite id="act5" nom="Initiation au japonais" typeActivite="Culture"/>
+			<langue id="ja1" nom="Japonais" niveau="A1"/>
+			<duree>
+				<debut>2024-01-01</debut>
+				<fin>2024-07-01</fin>
+			</duree>
+			<destination>Japon</destination>
+			<trancheAge>Etudiant</trancheAge>
+			<nbMaxParticipants>15</nbMaxParticipants>
+			<prix>550</prix>
+		</offre>
+		
+		<sejour id="s4" idOffre="o4">
+			<clients>
+				<client id="c5"/>
+			</clients>
+			<encadrants>
+				<accompagnateur id="act001"></accompagnateur>
+				<enseignant id="1003"></enseignant>
+			</encadrants>
+		</sejour> 
+		
+		<offre id="o4">
+			<nom>Sur les traces de Chopin</nom>
+			<type>Tourisme</type>
+			<description>Un voyage réservé aux seniors avec des sorties proposées 100% adaptées ! Profitez-en pour découvrir Chopin sous un nouveau jour ! </description>
+			<activite id="act15" nom="Visite de l'opéra" typeActivite="Culture"/>
+			<langue id="fr5" nom="Français" niveau="C1"/>
+			<duree>
+				<debut>2023-10-23</debut>
+				<fin>2023-11-14</fin>
+			</duree>
+			<destination>Pologne</destination>
+			<trancheAge>Senior</trancheAge>
+			<nbMaxParticipants>35</nbMaxParticipants>
+			<prix>650</prix>
 		</offre>
 	</voyages>
     
