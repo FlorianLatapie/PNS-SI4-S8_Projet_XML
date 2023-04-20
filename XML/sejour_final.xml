@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<agence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shema_final.xsd">
+<agence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema_final.xsd">
     <!--Clients-->
 	<clients>
 		<client type="Adulte" id="c1" nom="Doe" prenom="John"/>
@@ -30,8 +30,17 @@
 			<langues id="lang1" nom="Langue1" niveau="NiveauLangue1"/>
 			<langues id="lang2" nom="Langue2" niveau="NiveauLangue2"/>
 		</offre>
-		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1" idEncadrant="e1" idOffre="o1"/>
+		<sejour id="s1" nom="Séjour au Bahamas pour les enfants" duree="2023-05-01/2023-05-14" idClient="c1 c2 c3" idEncadrant="e1" idOffre="o1">
+			<clients>
+				<client id="c1"/>
+				<client id="c2"/>
+				<client id="c3"/>
+			</clients>
+			<encadrants>
+				<accompagnateur id="act001"></accompagnateur>
+				<enseignant id="1003"></enseignant>
+			</encadrants>
+		</sejour>
 	</voyages>
-	
     
 </agence>

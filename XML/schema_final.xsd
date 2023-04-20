@@ -135,8 +135,8 @@
 	<!--Un séjour est correspond à l'ensemble des personnes qui ont payés pour une offre-->
     <xs:complexType name="SejourType">
         <xs:sequence>
-            <xs:element name="clients" type="ClientType" minOccurs="1" maxOccurs="unbounded"/>
-            <xs:element name="accompagnateurs" type="AccompagnateurType" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="clients" type="Clients"/>
+            <xs:element name="encadrants" type="encadrantsType"/>
             <xs:element name="trancheAge" type="ClasseDAgeType" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
