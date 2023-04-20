@@ -1,0 +1,6 @@
+Scenario : 
+Scénario 1 : Afficher la liste des séjours linguistiques proposés pour les familles avec des enfants de moins de 12 ans dans une page HTML.
+Scénario 2 : Afficher la liste des clients qui ont réservé un séjour linguistique dans une page HTML.
+Scénario 3 : Afficher la liste des accompagnateurs pour un séjour linguistique en Italie dans une page HTML.
+Scénario 4 : Créer une nouvelle base de données XML qui regroupe les séjours linguistiques par destination dans une nouvelle structure.
+Scénario 5 : Créer une nouvelle base de données JSON qui regroupe les séjours linguistiques par type de séjour.
