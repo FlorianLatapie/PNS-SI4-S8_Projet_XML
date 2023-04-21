@@ -10,15 +10,15 @@
 	</clients>
 	<!--Encadrants-->
 	<encadrants>
-		<encadrant id="e1" nom="Smith" prenom="Alice"/>
-		<accompagnateur nom="Durand" prenom="Lucie" id="a001">
+		<encadrant id="ec01" nom="Smith" prenom="Alice"/>
+		<accompagnateur id="a001" nom="Durand" prenom="Lucie" >
 			<activites id="act001" nom="Randonnée" typeActivite="Sport"/>
 			<activites id="act002" nom="Cuisine locale" typeActivite="Culture"/>
 			<languesParlees id="l001" nom="Anglais" niveau="B2"/>
 			<languesParlees id="l002" nom="Espagnol" niveau="C1"/>
 		</accompagnateur>
 	
-		<enseignant nom="Martin" prenom="Sophie" id="en001">
+		<enseignant id="e001" nom="Martin" prenom="Sophie" >
 			<coursLangue id="l003" nom="Français" niveau="C2"/>
 			<coursLangue id="l004" nom="Allemand" niveau="B1"/>
 		</enseignant>
@@ -28,17 +28,18 @@
 	<voyages>
 		<sejour id="s1" idOffre="o1">
 			<clientsRefs>
-				<clientRef id="c2"/>
-				<clientRef id="c3"/>
+				<clientRef clientRef="c2"/>
+				<clientRef clientRef="c3"/>
 			</clientsRefs>
-			<encadrants>
-				<accompagnateur id="act001"></accompagnateur>
-				<enseignant id="1003"></enseignant>
-			</encadrants>
+			<encadrantsRefs>
+				<encadrantRef encadrantRef="ec01"/>
+				<encadrantRef encadrantRef="a001"/>
+				<encadrantRef encadrantRef="e001"/>
+			</encadrantsRefs>
 		</sejour>
 		
 		<offre id="o1">
-			<nom>Séjour au Bahamas pour les enfants</nom>
+			<nom>Séjour aux Bahamas pour les enfants</nom>
 			<type>Colonie de vacances</type>
 			<description>Une super colonie de vacances aux Bahamas pour les enfants !</description>
 			<activite id="act1" nom="Piscine" typeActivite="Sport"/>
@@ -56,16 +57,16 @@
 		</offre>
 		
 		<sejour id="s2" idOffre="o2">
-			<clients>
-				<client id="c1"/>
-				<client id="c2"/>
-				<client id="c3"/>
-				<client id="c4"/>
-			</clients>
-			<encadrants>
-				<accompagnateur id="act001"></accompagnateur>
-				<enseignant id="1003"></enseignant>
-			</encadrants>
+			<clientsRefs>
+				<clientRef clientRef="c1"/>
+				<clientRef clientRef="c2"/>
+				<clientRef clientRef="c3"/>
+				<clientRef clientRef="c4"/>
+			</clientsRefs>
+			<encadrantsRefs>
+				<encadrantRef encadrantRef="a001"/>
+				<encadrantRef encadrantRef="e001"/>
+			</encadrantsRefs>
 		</sejour>
 		
 		<offre id="o2">
@@ -86,13 +87,13 @@
 		</offre>
 		
 		<sejour id="s3" idOffre="o3">
-			<clients>
-				<client id="c4"/>
-			</clients>
-			<encadrants>
-				<accompagnateur id="act001"></accompagnateur>
-				<enseignant id="1003"></enseignant>
-			</encadrants>
+			<clientsRefs>
+				<clientRef clientRef="c4"/>
+			</clientsRefs>
+			<encadrantsRefs>
+				<encadrantRef encadrantRef="a001"/>
+				<encadrantRef encadrantRef="e001"/>
+			</encadrantsRefs>
 		</sejour>
 		
 		<offre id="o3">
@@ -112,13 +113,13 @@
 		</offre>
 		
 		<sejour id="s4" idOffre="o4">
-			<clients>
-				<client id="c5"/>
-			</clients>
-			<encadrants>
-				<accompagnateur id="act001"></accompagnateur>
-				<enseignant id="1003"></enseignant>
-			</encadrants>
+			<clientsRefs>
+				<clientRef clientRef="c5"/>
+			</clientsRefs>
+			<encadrantsRefs>
+				<encadrantRef encadrantRef="a001"/>
+				<encadrantRef encadrantRef="e001"/>
+			</encadrantsRefs>
 		</sejour> 
 		
 		<offre id="o4">
@@ -138,13 +139,13 @@
 		</offre>
 		
 		<sejour id="s5" idOffre="o4">
-			<clients>
-				<client id="c5"/>
-			</clients>
-			<encadrants>
-				<accompagnateur id="act001"></accompagnateur>
-				<enseignant id="1003"></enseignant>
-			</encadrants>
+			<clientsRefs>
+				<clientRef clientRef="c5"/>
+			</clientsRefs>
+			<encadrantsRefs>
+				<encadrantRef encadrantRef="a001"/>
+				<encadrantRef encadrantRef="e001"/>
+			</encadrantsRefs>
 		</sejour> 
 		
 		<offre id="o5">

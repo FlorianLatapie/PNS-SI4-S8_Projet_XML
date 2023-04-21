@@ -5,7 +5,7 @@
     <xs:complexType name="AgenceType">
         <xs:sequence>
             <xs:element name="clients" type="Clients"/>
-            <xs:element name="encadrants" type="encadrantsType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="encadrants" type="EncadrantsType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="voyages" type="voyagesType"/>
         </xs:sequence>
     </xs:complexType>
@@ -24,7 +24,7 @@
 		</xs:sequence>
 	</xs:complexType>
 
-    <xs:complexType name="encadrantsType">
+    <xs:complexType name="EncadrantsType">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element name="encadrant" type="EncadrantType"/>
             <xs:element name="accompagnateur" type="AccompagnateurType"/>
@@ -139,19 +139,32 @@
     <xs:complexType name="SejourType">
         <xs:sequence>
             <xs:element name="clientsRefs" type="ClientsRefsType"/>
-            <xs:element name="encadrants" type="encadrantsType"/>
+            <xs:element name="encadrantsRefs" type="EncadrantsRefsType"/>
 		</xs:sequence>
         <xs:attribute name="id" type="xs:ID"/>
 		<xs:attribute name="idOffre" type="xs:IDREF"/>
     </xs:complexType>
-	
+
 	<xs:complexType name="ClientsRefsType">
-        <xs:attribute name="clientRef" type="clientRefType"/>
+        <xs:sequence>
+            <xs:element name="clientRef" type="ClientRefType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
 	</xs:complexType>
-	
-	<xs:complexType name="clientRefType">
-		<xs:attribute name="id" type="xs:IDREF"/>
-	</xs:complexType>
+
+    <xs:complexType name="ClientRefType">
+        <xs:attribute name="clientRef" type="xs:IDREF"/>
+    </xs:complexType>
+
+    <xs:complexType name="EncadrantsRefsType">
+        <xs:sequence>
+            <xs:element name="encadrantRef" type="EncadrantRefType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EncadrantRefType">
+        <xs:attribute name="encadrantRef" type="xs:IDREF"/>
+    </xs:complexType>
+
 
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">
