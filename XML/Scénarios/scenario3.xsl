@@ -4,7 +4,7 @@
         <html>
             <head>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
-                <title>Liste de tous les clients</title>
+                <title>Liste de tous les encadrants</title>
             </head>
             <body>
                 <h1>Liste de tous les encadrants</h1>
