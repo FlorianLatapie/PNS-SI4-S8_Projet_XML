@@ -11,10 +11,21 @@
     <xsl:template name="jsonTemplate" match="*">
         <xsl:text>{&#xA;"</xsl:text>
         <xsl:value-of select="name()"/>
-        <xsl:text>":</xsl:text>
+        <xsl:text>": {</xsl:text>
+        <xsl:apply-templates select="@*"/>
         <xsl:apply-templates select="*">
-            <xsl:with-param name="parent" select="'Yes'"> </xsl:with-param>
+            <xsl:with-param name="parent" select="'Yes'"/>
         </xsl:apply-templates>
         <xsl:text>&#xA;}</xsl:text>
     </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:value-of select="concat(name(), ': &quot;', ., '&quot;')"/>
+        <xsl:if test="position() != last()">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+
+
 </xsl:stylesheet>
