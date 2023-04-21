@@ -6,6 +6,7 @@
         <html>
             <head>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
+                <title>Séjours linguistiques pour les familles</title>
             </head>
             <body>
                 <h1>Séjours linguistiques pour les familles</h1>
@@ -14,8 +15,8 @@
                         <th>Type de séjour</th>
                         <th>Destination</th>
                         <th>Description</th>
-                        <!--Pourrait être amélioré en divisant début & fin-->
-                        <th>Dates</th>
+                        <th>Date début</th>
+                        <th>Date fin</th>
                         <th>Langues</th>
                         <th>Prix</th>
                         <th>Limite de participants</th>
@@ -32,13 +33,18 @@
                                 <xsl:value-of select="description"/>
                             </td>
                             <td>
-                                <xsl:value-of select="duree"/>
+                                <xsl:variable name="debut" select="duree/debut"/>
+                                <xsl:value-of select="substring($debut, 9, 2)"/>/<xsl:value-of select="substring($debut, 6, 2)"/>/<xsl:value-of select="substring($debut, 1, 4)"/>
+                            </td>
+                            <td>
+                                <xsl:variable name="fin" select="duree/fin"/>
+                                <xsl:value-of select="substring($fin, 9, 2)"/>/<xsl:value-of select="substring($fin, 6, 2)"/>/<xsl:value-of select="substring($fin, 1, 4)"/>
                             </td>
                             <td>
                                 <xsl:value-of select="langue/@nom"/>
                             </td>
                             <td>
-                                <xsl:value-of select="concat(prix,' Euros')"/>
+                                <xsl:value-of select="concat(prix,'€')"/>
                             </td>
                             <td>
                                 <xsl:value-of select="nbMaxParticipants"/>

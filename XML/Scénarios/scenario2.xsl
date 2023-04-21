@@ -3,6 +3,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <link rel="stylesheet" type="text/css" href="style.css"/>
                 <title>Liste des clients ayant réservé un séjour linguistique</title>
             </head>
             <body>
