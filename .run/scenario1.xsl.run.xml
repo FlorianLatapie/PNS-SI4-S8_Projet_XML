@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="scenario1.xsl" type="XSLT" factoryName="XSLT">
-    <option name="myOutputFile" value="C:\Users\Florian\Documents\GitHub\XML\XML\Scénarios\output1.html" />
+    <option name="myOutputFile" value="C:\Users\pdevi\IdeaProjects\XML\XML\Scénarios\output1.html" />
     <option name="myOpenOutputFile" value="false" />
     <option name="myOpenInBrowser" value="true" />
     <option name="mySmartErrorHandling" value="true" />

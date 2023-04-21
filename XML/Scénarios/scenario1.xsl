@@ -12,6 +12,7 @@
                 <h1>Séjours linguistiques pour les enfants</h1>
                 <table>
                     <tr>
+                        <th>Nom du séjour</th>
                         <th>Type de séjour</th>
                         <th>Destination</th>
                         <th>Description</th>
@@ -23,6 +24,9 @@
                     </tr>
                     <xsl:for-each select="agence/voyages/offre[trancheAge='Enfant']">
                         <tr>
+                            <td>
+                                <xsl:value-of select="nom"/>
+                            </td>
                             <td>
                                 <xsl:value-of select="type"/>
                             </td>

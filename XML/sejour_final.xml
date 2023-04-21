@@ -29,7 +29,7 @@
         <!-- offres -->
         <offre id="o6">
             <nom>Au Pair à Paris</nom>
-            <type>Groupe scolaire</type>
+            <type>Au pair</type>
             <description>
                 L'occasion révée pour visiter la capitale et ses alentours à faibles coûts !
             </description>
@@ -40,7 +40,7 @@
                 <fin>2023-12-02</fin>
             </duree>
             <destination>Paris</destination>
-            <trancheAge>Enfant</trancheAge>
+            <trancheAge>Adolescent</trancheAge>
             <nbMaxParticipants>30</nbMaxParticipants>
             <prix>450</prix>
         </offre>
