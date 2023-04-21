@@ -1,45 +1,46 @@
 /* Style de base pour le corps de la page */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Style pour l'en-tête */
 h1 {
-  font-size: 2em;
-  text-align: center;
-  margin: 1em 0;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
 }
 
 /* Style pour la table */
 table {
-  border-collapse: collapse;
-  margin: 0 auto;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
 /* Style pour les cellules de la table */
 td, th {
-  border: 1px solid black;
-  padding: 0.5em;
-  text-align: center;
+    border: 1px solid black;
+    padding: 0.5em;
+    text-align: center;
 }
 
 /* Style pour la première ligne de la table (les en-têtes de colonne) */
 th {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Style pour les lignes impaires de la table */
 tr:nth-child(odd) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 /* Style pour les liens */
 a {
-  color: blue;
-  text-decoration: none;
+    color: blue;
+    text-decoration: none;
 }
+
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
