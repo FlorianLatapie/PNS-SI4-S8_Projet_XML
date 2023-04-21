@@ -27,6 +27,24 @@
     <!--voyages-->
     <voyages>
         <!-- offres -->
+        <offre id="o6">
+            <nom>Au Pair à Paris</nom>
+            <type>Groupe scolaire</type>
+            <description>
+                L'occasion révée pour visiter la capitale et ses alentours à faibles coûts !
+            </description>
+            <activite id="act17" nom="Visite de la tour Eiffel" typeActivite="Culture"/>
+            <langue nom="Français" niveau="B1"/>
+            <duree>
+                <debut>2023-11-18</debut>
+                <fin>2023-12-02</fin>
+            </duree>
+            <destination>Paris</destination>
+            <trancheAge>Enfant</trancheAge>
+            <nbMaxParticipants>30</nbMaxParticipants>
+            <prix>450</prix>
+        </offre>
+
         <offre id="o5">
             <nom>Voyage Scolaire à Paris</nom>
             <type>Groupe scolaire</type>
@@ -164,13 +182,22 @@
             </encadrantsRefs>
         </sejour>
 
-        <sejour id="s5" idOffre="o4">
+        <sejour id="s5" idOffre="o5">
             <clientsRefs>
                 <clientRef clientRef="c5"/>
             </clientsRefs>
             <encadrantsRefs>
                 <encadrantRef encadrantRef="a001"/>
                 <encadrantRef encadrantRef="e001"/>
+            </encadrantsRefs>
+        </sejour>
+
+        <sejour id="s6" idOffre="o6">
+            <clientsRefs>
+                <clientRef clientRef="c5"/>
+            </clientsRefs>
+            <encadrantsRefs>
+                <encadrantRef encadrantRef="ec01"/>
             </encadrantsRefs>
         </sejour>
     </voyages>
