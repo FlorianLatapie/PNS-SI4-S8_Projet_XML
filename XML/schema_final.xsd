@@ -6,7 +6,7 @@
         <xs:sequence>
             <xs:element name="clients" type="Clients"/>
             <xs:element name="encadrants" type="encadrantsType" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="voyages" type="voyagesType"></xs:element>
+            <xs:element name="voyages" type="voyagesType"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -24,12 +24,14 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="encadrantsType">
-		<xs:sequence>
-		
-			<xs:element name="encadrant" type="EncadrantType" minOccurs="0" maxOccurs="unbounded"/>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="encadrantsType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="encadrant" type="EncadrantType"/>
+            <xs:element name="accompagnateur" type="AccompagnateurType"/>
+            <xs:element name ="enseignant" type="EnseignantType"/>
+        </xs:choice>
+    </xs:complexType>
+
 
     <!-- # identités et personnes -->
     <xs:complexType name="IdentiteType">
@@ -63,8 +65,7 @@
     <!-- ## encadrant -->
     <xs:complexType name="EncadrantType">
         <xs:complexContent>
-            <xs:extension base="IdentiteType">
-            </xs:extension>
+            <xs:extension base="IdentiteType"/>
         </xs:complexContent>
     </xs:complexType>
 
@@ -89,7 +90,7 @@
     <!-- ### accompagnateur -->
     <xs:complexType name="AccompagnateurType">
         <xs:complexContent>
-            <xs:extension base="EncadrantsType">
+            <xs:extension base="EncadrantType">
                 <xs:sequence>
                     <xs:element name="activites" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
                     <xs:element name="languesParlees" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
@@ -115,7 +116,7 @@
     <!-- ### enseignant -->
     <xs:complexType name="EnseignantType">
         <xs:complexContent>
-            <xs:extension base="EncadrantsType">
+            <xs:extension base="EncadrantType">
                 <xs:sequence>
                     <xs:element name="coursLangue" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
                 </xs:sequence>
@@ -145,12 +146,12 @@
     </xs:complexType>
 	
 	<xs:complexType name="ClientsRefsType">
-		<xs:attribute name="clientRef" type="clientRefType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:attribute name="clientRef" type="clientRefType"/>
 	</xs:complexType>
 	
-	<xs:simpleType name="clientRefType">
+	<xs:complexType name="clientRefType">
 		<xs:attribute name="id" type="xs:IDREF"/>
-	</xs:simpleType>
+	</xs:complexType>
 
     <!-- ## offre -->
     <xs:complexType name="OffreSejourType">

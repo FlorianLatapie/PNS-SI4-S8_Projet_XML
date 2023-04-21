@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test_shema.xsd">
+    <name>John Smith</name>
+    <age>35</age>
+    <position>Manager</position>
+</employee>
