@@ -3,11 +3,12 @@
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 exclude-result-prefixes="json xsi">
 
-<xsl:output method="text"/>
+    <xsl:output method="text"/>
 
     <xsl:template match="*">
-        "<xsl:value-of select="name()"/>" :<xsl:call-template name="jsonTemplate">
-    </xsl:call-template>
+        "<xsl:value-of select="name()"/>" :
+        <xsl:call-template name="jsonTemplate">
+        </xsl:call-template>
     </xsl:template>
 
     <xsl:template name="jsonTemplate" match="*">
