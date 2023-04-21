@@ -1,87 +1,86 @@
 {
-"agence": {xsi:noNamespaceSchemaLocation: "schema_final.xsd"
-{
+"agence": {{
 "clients": {{
-"client": {type: "Adulte",
-id: "c1",
-nom: "Doe",
-prenom: "John"
+"client": {"type": "Adulte",
+"id": "c1",
+"nom": "Doe",
+"prenom": "John"
 
 }{
-"client": {type: "Enfant",
-id: "c2",
-nom: "Doe",
-prenom: "Jane"
+"client": {"type": "Enfant",
+"id": "c2",
+"nom": "Doe",
+"prenom": "Jane"
 
 }{
-"client": {type: "Enfant",
-id: "c3",
-nom: "Doe",
-prenom: "Jules"
+"client": {"type": "Enfant",
+"id": "c3",
+"nom": "Doe",
+"prenom": "Jules"
 
 }{
-"client": {type: "Adolescent",
-id: "c4",
-nom: "Dupont",
-prenom: "Luc"
+"client": {"type": "Adolescent",
+"id": "c4",
+"nom": "Dupont",
+"prenom": "Luc"
 
 }{
-"client": {type: "Senior",
-id: "c5",
-nom: "Thé",
-prenom: "Nicole"
+"client": {"type": "Senior",
+"id": "c5",
+"nom": "Thé",
+"prenom": "Nicole"
 
 }
 }{
 "encadrants": {{
-"encadrant": {id: "ec01",
-nom: "Smith",
-prenom: "Alice"
+"encadrant": {"id": "ec01",
+"nom": "Smith",
+"prenom": "Alice"
 
 }{
-"accompagnateur": {id: "a001",
-nom: "Durand",
-prenom: "Lucie"
+"accompagnateur": {"id": "a001",
+"nom": "Durand",
+"prenom": "Lucie"
 {
-"activites": {id: "act001",
-nom: "Randonnée",
-typeActivite: "Sport"
+"activites": {"id": "act001",
+"nom": "Randonnée",
+"typeActivite": "Sport"
 
 }{
-"activites": {id: "act002",
-nom: "Cuisine locale",
-typeActivite: "Culture"
+"activites": {"id": "act002",
+"nom": "Cuisine locale",
+"typeActivite": "Culture"
 
 }{
-"languesParlees": {id: "l001",
-nom: "Anglais",
-niveau: "B2"
+"languesParlees": {"id": "l001",
+"nom": "Anglais",
+"niveau": "B2"
 
 }{
-"languesParlees": {id: "l002",
-nom: "Espagnol",
-niveau: "C1"
+"languesParlees": {"id": "l002",
+"nom": "Espagnol",
+"niveau": "C1"
 
 }
 }{
-"enseignant": {id: "e001",
-nom: "Martin",
-prenom: "Sophie"
+"enseignant": {"id": "e001",
+"nom": "Martin",
+"prenom": "Sophie"
 {
-"coursLangue": {id: "l003",
-nom: "Français",
-niveau: "C2"
+"coursLangue": {"id": "l003",
+"nom": "Français",
+"niveau": "C2"
 
 }{
-"coursLangue": {id: "l004",
-nom: "Allemand",
-niveau: "B1"
+"coursLangue": {"id": "l004",
+"nom": "Allemand",
+"niveau": "B1"
 
 }
 }
 }{
 "voyages": {{
-"offre": {id: "o5"
+"offre": {"id": "o5"
 {
 "nom": {
 }{
@@ -89,14 +88,14 @@ niveau: "B1"
 }{
 "description": {
 }{
-"activite": {id: "act16",
-nom: "Visite de la tour Eiffel",
-typeActivite: "Culture"
+"activite": {"id": "act16",
+"nom": "Visite de la tour Eiffel",
+"typeActivite": "Culture"
 
 }{
-"langue": {id: "fr3",
-nom: "Français",
-niveau: "B1"
+"langue": {"id": "fr3",
+"nom": "Français",
+"niveau": "B1"
 
 }{
 "duree": {{
@@ -114,7 +113,7 @@ niveau: "B1"
 "prix": {
 }
 }{
-"offre": {id: "o4"
+"offre": {"id": "o4"
 {
 "nom": {
 }{
@@ -122,14 +121,14 @@ niveau: "B1"
 }{
 "description": {
 }{
-"activite": {id: "act15",
-nom: "Visite de l'opéra",
-typeActivite: "Culture"
+"activite": {"id": "act15",
+"nom": "Visite de l'opéra",
+"typeActivite": "Culture"
 
 }{
-"langue": {id: "fr5",
-nom: "Français",
-niveau: "C1"
+"langue": {"id": "fr5",
+"nom": "Français",
+"niveau": "C1"
 
 }{
 "duree": {{
@@ -147,7 +146,7 @@ niveau: "C1"
 "prix": {
 }
 }{
-"offre": {id: "o3"
+"offre": {"id": "o3"
 {
 "nom": {
 }{
@@ -155,14 +154,14 @@ niveau: "C1"
 }{
 "description": {
 }{
-"activite": {id: "act5",
-nom: "Initiation au japonais",
-typeActivite: "Culture"
+"activite": {"id": "act5",
+"nom": "Initiation au japonais",
+"typeActivite": "Culture"
 
 }{
-"langue": {id: "ja1",
-nom: "Japonais",
-niveau: "A1"
+"langue": {"id": "ja1",
+"nom": "Japonais",
+"niveau": "A1"
 
 }{
 "duree": {{
@@ -180,7 +179,7 @@ niveau: "A1"
 "prix": {
 }
 }{
-"offre": {id: "o2"
+"offre": {"id": "o2"
 {
 "nom": {
 }{
@@ -188,19 +187,19 @@ niveau: "A1"
 }{
 "description": {
 }{
-"activite": {id: "act3",
-nom: "Randonnée",
-typeActivite: "Sport"
+"activite": {"id": "act3",
+"nom": "Randonnée",
+"typeActivite": "Sport"
 
 }{
-"activite": {id: "act4",
-nom: "Degustation de plats locaux",
-typeActivite: "Culture"
+"activite": {"id": "act4",
+"nom": "Degustation de plats locaux",
+"typeActivite": "Culture"
 
 }{
-"langue": {id: "lang3",
-nom: "Anglais",
-niveau: "B2"
+"langue": {"id": "lang3",
+"nom": "Anglais",
+"niveau": "B2"
 
 }{
 "duree": {{
@@ -218,7 +217,7 @@ niveau: "B2"
 "prix": {
 }
 }{
-"offre": {id: "o1"
+"offre": {"id": "o1"
 {
 "nom": {
 }{
@@ -226,24 +225,24 @@ niveau: "B2"
 }{
 "description": {
 }{
-"activite": {id: "act1",
-nom: "Piscine",
-typeActivite: "Sport"
+"activite": {"id": "act1",
+"nom": "Piscine",
+"typeActivite": "Sport"
 
 }{
-"activite": {id: "act2",
-nom: "Degustation de plats locaux",
-typeActivite: "Culture"
+"activite": {"id": "act2",
+"nom": "Degustation de plats locaux",
+"typeActivite": "Culture"
 
 }{
-"langue": {id: "fr1",
-nom: "Français",
-niveau: "A1"
+"langue": {"id": "fr1",
+"nom": "Français",
+"niveau": "A1"
 
 }{
-"langue": {id: "en2",
-nom: "Anglais",
-niveau: "A2"
+"langue": {"id": "en2",
+"nom": "Anglais",
+"niveau": "A2"
 
 }{
 "duree": {{
@@ -261,102 +260,102 @@ niveau: "A2"
 "prix": {
 }
 }{
-"sejour": {id: "s1",
-idOffre: "o1"
+"sejour": {"id": "s1",
+"idOffre": "o1"
 {
 "clientsRefs": {{
-"clientRef": {clientRef: "c2"
+"clientRef": {"clientRef": "c2"
 
 }{
-"clientRef": {clientRef: "c3"
+"clientRef": {"clientRef": "c3"
 
 }
 }{
 "encadrantsRefs": {{
-"encadrantRef": {encadrantRef: "ec01"
+"encadrantRef": {"encadrantRef": "ec01"
 
 }{
-"encadrantRef": {encadrantRef: "a001"
+"encadrantRef": {"encadrantRef": "a001"
 
 }{
-"encadrantRef": {encadrantRef: "e001"
+"encadrantRef": {"encadrantRef": "e001"
 
 }
 }
 }{
-"sejour": {id: "s2",
-idOffre: "o2"
+"sejour": {"id": "s2",
+"idOffre": "o2"
 {
 "clientsRefs": {{
-"clientRef": {clientRef: "c1"
+"clientRef": {"clientRef": "c1"
 
 }{
-"clientRef": {clientRef: "c2"
+"clientRef": {"clientRef": "c2"
 
 }{
-"clientRef": {clientRef: "c3"
+"clientRef": {"clientRef": "c3"
 
 }{
-"clientRef": {clientRef: "c4"
+"clientRef": {"clientRef": "c4"
 
 }
 }{
 "encadrantsRefs": {{
-"encadrantRef": {encadrantRef: "a001"
+"encadrantRef": {"encadrantRef": "a001"
 
 }{
-"encadrantRef": {encadrantRef: "e001"
+"encadrantRef": {"encadrantRef": "e001"
 
 }
 }
 }{
-"sejour": {id: "s3",
-idOffre: "o3"
+"sejour": {"id": "s3",
+"idOffre": "o3"
 {
 "clientsRefs": {{
-"clientRef": {clientRef: "c4"
+"clientRef": {"clientRef": "c4"
 
 }
 }{
 "encadrantsRefs": {{
-"encadrantRef": {encadrantRef: "a001"
+"encadrantRef": {"encadrantRef": "a001"
 
 }{
-"encadrantRef": {encadrantRef: "e001"
+"encadrantRef": {"encadrantRef": "e001"
 
 }
 }
 }{
-"sejour": {id: "s4",
-idOffre: "o4"
+"sejour": {"id": "s4",
+"idOffre": "o4"
 {
 "clientsRefs": {{
-"clientRef": {clientRef: "c5"
+"clientRef": {"clientRef": "c5"
 
 }
 }{
 "encadrantsRefs": {{
-"encadrantRef": {encadrantRef: "a001"
+"encadrantRef": {"encadrantRef": "a001"
 
 }{
-"encadrantRef": {encadrantRef: "e001"
+"encadrantRef": {"encadrantRef": "e001"
 
 }
 }
 }{
-"sejour": {id: "s5",
-idOffre: "o4"
+"sejour": {"id": "s5",
+"idOffre": "o4"
 {
 "clientsRefs": {{
-"clientRef": {clientRef: "c5"
+"clientRef": {"clientRef": "c5"
 
 }
 }{
 "encadrantsRefs": {{
-"encadrantRef": {encadrantRef: "a001"
+"encadrantRef": {"encadrantRef": "a001"
 
 }{
-"encadrantRef": {encadrantRef: "e001"
+"encadrantRef": {"encadrantRef": "e001"
 
 }
 }
