@@ -6,10 +6,10 @@
         <html>
             <head>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
-                <title>Séjours linguistiques pour les familles</title>
+                <title>Séjours linguistiques pour les enfants</title>
             </head>
             <body>
-                <h1>Séjours linguistiques pour les familles</h1>
+                <h1>Séjours linguistiques pour les enfants</h1>
                 <table>
                     <tr>
                         <th>Type de séjour</th>
