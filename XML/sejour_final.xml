@@ -137,7 +137,7 @@
 			<prix>650</prix>
 		</offre>
 		
-		<sejour id="s4" idOffre="o4">
+		<sejour id="s5" idOffre="o4">
 			<clients>
 				<client id="c5"/>
 			</clients>
@@ -147,7 +147,7 @@
 			</encadrants>
 		</sejour> 
 		
-		<offre id="o4">
+		<offre id="o5">
 			<nom>Voyage Scolaire à Paris</nom>
 			<type>Groupe scolaire</type>
 			<description>Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les monuments historiques de notre pays. </description>

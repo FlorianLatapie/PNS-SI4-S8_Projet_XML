@@ -127,8 +127,10 @@
 
     <!-- ## misc -->
     <xs:complexType name="DureeType">
-        <xs:attribute name="debut" type="xs:date"/>
-        <xs:attribute name="fin" type="xs:date"/>
+        <xs:sequence>
+            <xs:element name="debut" type="xs:date"/>
+            <xs:element name="fin" type="xs:date"/>
+        </xs:sequence>
     </xs:complexType>
 
     <!-- ## séjour -->
@@ -158,8 +160,8 @@
 			<xs:element name="description" type="xs:string"/>
 			<xs:element name="activite" type="ActiviteType" minOccurs="1" maxOccurs="unbounded"/>
             <xs:element name="langue" type="LangueType" minOccurs="1" maxOccurs="unbounded"/>
-			<xs:element name="duree" type="DureeType"></xs:element>
-			<xs:element name="destination" type="xs:string"></xs:element>
+            <xs:element name="duree" type="DureeType"/>
+            <xs:element name="destination" type="xs:string"/>
             <xs:element name="trancheAge" type="ClasseDAgeType" minOccurs="1" maxOccurs="unbounded"/>
 			<xs:element name="nbMaxParticipants" type="xs:int"/>
 			<xs:element name="prix" type="xs:int"/>
