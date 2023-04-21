@@ -4,33 +4,37 @@
         <html>
             <head>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
-                <title>Liste des clients ayant réservé un séjour linguistique</title>
+                <title>Liste de tous les clients</title>
             </head>
             <body>
-                <h1>Liste des clients ayant réservé un séjour linguistique</h1>
+                <h1>Liste de tous les clients</h1>
                 <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Tranche d'age</th>
-                    </tr>
-                    <xsl:for-each select="agence/voyages/sejour/clients/client">
+                    <thead>
                         <tr>
-                            <td>
-                                <xsl:value-of select="@id"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="agence/clients/client[@id=current()/@idClient]/nom"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="agence/clients/client[@id=current()/@idClient]/prenom"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="agence/clients/client[@id=current()/@idClient]/type"/>
-                            </td>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Classe d'âge</th>
                         </tr>
-                    </xsl:for-each>
+                    </thead>
+                    <tbody>
+                        <xsl:for-each select="agence/clients/client">
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="@id"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="@nom"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="@prenom"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="@type"/>
+                                </td>
+                            </tr>
+                        </xsl:for-each>
+                    </tbody>
                 </table>
             </body>
         </html>
