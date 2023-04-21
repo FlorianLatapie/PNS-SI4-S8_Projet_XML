@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="scenario1.xsl" type="XSLT" factoryName="XSLT">
-    <option name="myOutputFile" value="C:\Users\Florian\Documents\GitHub\XML\XML\Scénarios\output1.html" />
+  <configuration default="false" name="scenario3.xsl" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\Florian\Documents\GitHub\XML\XML\Scénarios\output3.html" />
     <option name="myOpenOutputFile" value="false" />
     <option name="myOpenInBrowser" value="true" />
     <option name="mySmartErrorHandling" value="true" />
@@ -9,7 +9,7 @@
     <option name="myWorkingDirectory" value="" />
     <option name="myModule" />
     <option name="myJdk" />
-    <XsltFile url="file://$PROJECT_DIR$/XML/Scénarios/scenario1.xsl" />
+    <XsltFile url="file://$PROJECT_DIR$/XML/Scénarios/scenario3.xsl" />
     <XmlFile url="file://$PROJECT_DIR$/XML/sejour_final.xml" />
     <parameters />
     <OutputType value="CONSOLE" save-to-file="true" />
