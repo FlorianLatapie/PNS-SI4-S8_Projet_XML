@@ -20,7 +20,7 @@
         <xsl:variable name="parentName" select="name(..)"/>
         <xsl:choose>
             <xsl:when test="not(*)">
-                <xsl:value-of select="concat('&quot;',name(), '&quot;: aa&quot;', ., '&quot;')"/>
+                <xsl:value-of select="concat('&quot;',name(), '&quot;: &quot;', ., '&quot;')"/>
                 <xsl:if test="$parentName">
                     <xsl:text>,</xsl:text>
                 </xsl:if>
@@ -28,7 +28,7 @@
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="$parentName">
-                        <xsl:value-of select="concat('&quot;',name(), '&quot;: bb[')"/>
+                        <xsl:value-of select="concat('&quot;',name(), '&quot;: [')"/>
                         <xsl:apply-templates select="*" mode="array"/>
                         <xsl:text>]</xsl:text>
                         <xsl:if test="position() != last()">
@@ -52,7 +52,7 @@
     </xsl:template>
 
     <xsl:template match="@*">
-        <xsl:value-of select="concat('&quot;',name(), '&quot;: dd&quot;', ., '&quot;')"/>
+        <xsl:value-of select="concat('&quot;',name(), '&quot;: &quot;', ., '&quot;')"/>
         <xsl:if test="position() != last()">
             <xsl:text>,</xsl:text>
         </xsl:if>
@@ -67,7 +67,7 @@
         <!--<xsl:value-of select="concat('&quot;',name(), '&quot;:')"/>-->
         <!--<xsl:text>{&#xA;"</xsl:text>
         <xsl:value-of select="name()"/>
-        <xsl:text>"aaaaaaaaaaa: {</xsl:text>-->
+        <xsl:text>": {</xsl:text>-->
         <xsl:text>{</xsl:text>
         <xsl:apply-templates select="@*"/>
         <xsl:apply-templates select="*">

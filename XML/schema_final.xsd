@@ -10,7 +10,7 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!--Conteneurs d'elements-->
+    <!--Conteneurs d'éléments-->
     <xs:complexType name="Clients">
         <xs:sequence>
             <xs:element name="client" type="ClientType" minOccurs="0" maxOccurs="unbounded"/>
@@ -132,7 +132,7 @@
     </xs:complexType>
 
     <!-- ## séjour -->
-    <!--Un séjour est correspond à l'ensemble des personnes qui ont payés pour une offre-->
+    <!--Un séjour correspond à l'ensemble des personnes qui ont payé pour une offre-->
     <xs:complexType name="SejourType">
         <xs:sequence>
             <xs:element name="clientsRefs" type="ClientsRefsType"/>
