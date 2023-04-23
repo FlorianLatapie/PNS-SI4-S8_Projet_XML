@@ -48,9 +48,7 @@
         <offre id="o5">
             <nom>Voyage Scolaire à Paris</nom>
             <type>Groupe scolaire</type>
-            <description>Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les
-                monuments historiques de notre pays.
-            </description>
+            <description>Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les monuments historiques de notre pays.</description>
             <activite id="act16" nom="Visite de la tour Eiffel" typeActivite="Culture"/>
             <langue id="fr3" nom="Français" niveau="B1"/>
             <duree>
@@ -66,9 +64,7 @@
         <offre id="o4">
             <nom>Sur les traces de Chopin</nom>
             <type>Tourisme</type>
-            <description>Un voyage réservé aux seniors avec des sorties proposées 100% adaptées ! Profitez-en pour
-                découvrir Chopin sous un nouveau jour !
-            </description>
+            <description>Un voyage réservé aux seniors avec des sorties proposées 100% adaptées ! Profitez-en pour découvrir Chopin sous un nouveau jour !</description>
             <activite id="act15" nom="Visite de l'opéra" typeActivite="Culture"/>
             <langue id="fr5" nom="Français" niveau="C1"/>
             <duree>
@@ -84,9 +80,7 @@
         <offre id="o3">
             <nom>Travail au Pair à Tokyo</nom>
             <type>Au pair</type>
-            <description>opportinité unique de voyager au Japon ! Avec nos partenaires soyez assurés de pouvoir être
-                bien accueilli et de pouvoir découvrir le pays !
-            </description>
+            <description>opportinité unique de voyager au Japon ! Avec nos partenaires soyez assurés de pouvoir être bien accueilli et de pouvoir découvrir le pays !</description>
             <activite id="act5" nom="Initiation au japonais" typeActivite="Culture"/>
             <langue id="ja1" nom="Japonais" niveau="A1"/>
             <duree>
