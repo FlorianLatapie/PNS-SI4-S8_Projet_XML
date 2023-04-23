@@ -30,9 +30,7 @@
         <offre id="o6">
             <nom>Au Pair à Paris</nom>
             <type>Au pair</type>
-            <description>
-                L'occasion révée pour visiter la capitale et ses alentours à faibles coûts !
-            </description>
+            <description>L'occasion rêvée pour visiter la capitale et ses alentours à faibles coûts !</description>
             <activite id="act17" nom="Visite de la tour Eiffel" typeActivite="Culture"/>
             <langue nom="Français" niveau="B1"/>
             <duree>

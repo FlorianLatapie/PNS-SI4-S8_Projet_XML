@@ -1,27 +1,80 @@
-<sejours><destination nom="Paris"><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Au Pair à Paris</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Groupe scolaire</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                L'occasion révée pour visiter la capitale et ses alentours à faibles coûts !
-            </description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<sejours>
+	<destination nom="Paris">
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Au Pair à Paris</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Au pair</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">L'occasion rêvée pour visiter la capitale et ses alentours à faibles coûts !</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2023-11-18</debut>
                 <fin>2023-12-02</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">30</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">450</prix></sejour><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Voyage Scolaire à Paris</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Groupe scolaire</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les
-                monuments historiques de notre pays.
-            </description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">30</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">450</prix>
+			</sejour>
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Voyage Scolaire à Paris</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Groupe scolaire</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Un voyage destiné aux élèves d'école primaire ayant pour but de faire découvrir aux enfants les monuments historiques de notre pays.</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2023-11-18</debut>
                 <fin>2023-12-02</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">30</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">450</prix></sejour></destination><destination nom="Pologne"><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Sur les traces de Chopin</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Tourisme</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Un voyage réservé aux seniors avec des sorties proposées 100% adaptées ! Profitez-en pour
-                découvrir Chopin sous un nouveau jour !
-            </description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">30</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">450</prix>
+			</sejour>
+	</destination>
+	<destination nom="Pologne">
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Sur les traces de Chopin</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Tourisme</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Un voyage réservé aux seniors avec des sorties proposées 100% adaptées ! Profitez-en pour découvrir Chopin sous un nouveau jour !</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2023-10-23</debut>
                 <fin>2023-11-14</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">35</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">650</prix></sejour></destination><destination nom="Japon"><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Travail au Pair à Tokyo</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Au pair</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">opportinité unique de voyager au Japon ! Avec nos partenaires soyez assurés de pouvoir être
-                bien accueilli et de pouvoir découvrir le pays !
-            </description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">35</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">650</prix>
+			</sejour>
+	</destination>
+	<destination nom="Japon">
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Travail au Pair à Tokyo</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Au pair</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">opportinité unique de voyager au Japon ! Avec nos partenaires soyez assurés de pouvoir être bien accueilli et de pouvoir découvrir le pays !</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2024-01-01</debut>
                 <fin>2024-07-01</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">550</prix></sejour></destination><destination nom="Pérou"><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Immersion en famille au Pérou</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Immersion en famille</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Vous ne connaissez pas le Pérou ? C'est le moment de le découvrir en famille !</description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">550</prix>
+			</sejour>
+	</destination>
+	<destination nom="Pérou">
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Immersion en famille au Pérou</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Immersion en famille</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Vous ne connaissez pas le Pérou ? C'est le moment de le découvrir en famille !</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2023-05-21</debut>
                 <fin>2023-06-30</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">45</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">750</prix></sejour></destination><destination nom="Bahamas"><sejour><nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Séjour aux Bahamas pour les enfants</nom><type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Colonie de vacances</type><description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Une super colonie de vacances aux Bahamas pour les enfants !</description><duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">45</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">750</prix>
+			</sejour>
+	</destination>
+	<destination nom="Bahamas">
+		<sejour>
+			<nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Séjour aux Bahamas pour les enfants</nom>
+			<type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Colonie de vacances</type>
+			<description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Une super colonie de vacances aux Bahamas pour les enfants !</description>
+			<duree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <debut>2023-05-01</debut>
                 <fin>2023-05-14</fin>
-            </duree><nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">45</nbMaxParticipants><prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">350</prix></sejour></destination></sejours>
+            </duree>
+			<nbMaxParticipants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">45</nbMaxParticipants>
+			<prix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">350</prix>
+			</sejour>
+	</destination>
+
+</sejours>
