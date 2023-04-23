@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="scenario4.xsl (Florian)" type="XSLT" factoryName="XSLT" folderName="Florian">
     <option name="myOutputFile" value="C:\Users\Florian\Documents\GitHub\XML\XML\Scénarios\output4.xml" />
-    <option name="myOpenOutputFile" value="false" />
+    <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />
     <option name="myRunnerPort" value="34873" />

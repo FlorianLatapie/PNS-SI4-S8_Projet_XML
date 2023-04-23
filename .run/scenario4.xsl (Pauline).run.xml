@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="scenario4.xsl (Pauline)" type="XSLT" factoryName="XSLT" folderName="Pauline">
     <option name="myOutputFile" value="C:\Users\pdevi\IdeaProjects\XML\XML\Scénarios\output4.xml" />
-    <option name="myOpenOutputFile" value="false" />
+    <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />
     <option name="myRunnerPort" value="34873" />
