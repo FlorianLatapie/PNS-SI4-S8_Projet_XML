@@ -5,10 +5,10 @@
 
     <xsl:output method="text"/>
 
-    <xsl:template match="agence/clients">
+    <xsl:template match="/">
         <!-- Start the JSON array -->
         <xsl:text>[&#xa;</xsl:text>
-        <xsl:apply-templates select="client"/>
+        <xsl:apply-templates select="//client"/>
         <xsl:text>&#xa;]</xsl:text>
     </xsl:template>
 
