@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="scenario5-old.xsl (Pauline)" type="XSLT" factoryName="XSLT" folderName="Pauline">
-    <option name="myOutputFile" value="C:\Users\pdevi\IdeaProjects\\XML\XML\Scénarios\output5.json" />
+    <option name="myOutputFile" value="C:\Users\pdevi\IdeaProjects\\XML\XML\Scénarios\output5-old.json" />
     <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />
