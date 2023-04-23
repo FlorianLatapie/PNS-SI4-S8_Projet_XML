@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "nom": {
+        "type": "string"
+      },
+      "prenom": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["Adulte", "Enfant", "Adolescent", "Etudiant", "Senior"]
+      }
+    },
+    "required": ["id", "nom", "prenom", "type"]
+  }
+}
