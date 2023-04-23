@@ -52,13 +52,10 @@
     <xs:simpleType name="ClasseDAgeType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Adulte"/>
-            <xs:enumeration value="Famille"/>
             <xs:enumeration value="Enfant"/>
             <xs:enumeration value="Adolescent"/>
             <xs:enumeration value="Etudiant"/>
             <xs:enumeration value="Senior"/>
-            <!-- todo mettre dans le rapport comité d'entreprisennnnnnnt -->
-            <xs:enumeration value="Groupe"/>
         </xs:restriction>
     </xs:simpleType>
 
