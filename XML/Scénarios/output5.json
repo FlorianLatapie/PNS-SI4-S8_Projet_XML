@@ -1,33 +1,32 @@
 [
-{
-"id": "c1",
-"nom": "Doe",
-"prenom": "John",
-"type": "Adulte"
-,},
-{
-"id": "c2",
-"nom": "Doe",
-"prenom": "Jane",
-"type": "Enfant"
-,},
-{
-"id": "c3",
-"nom": "Doe",
-"prenom": "Jules",
-"type": "Enfant"
-,},
-{
-"id": "c4",
-"nom": "Dupont",
-"prenom": "Luc",
-"type": "Adolescent"
-,},
-{
-"id": "c5",
-"nom": "Thé",
-"prenom": "Nicole",
-"type": "Senior"
-}
-
+  {
+	"id": "c1",
+	"nom": "Doe",
+	"prenom": "John",
+	"type": "Adulte"
+  },
+  {
+	"id": "c2",
+	"nom": "Doe",
+	"prenom": "Jane",
+	"type": "Enfant"
+  },
+  {
+	"id": "c3",
+	"nom": "Doe",
+	"prenom": "Jules",
+	"type": "Enfant"
+  },
+  {
+	"id": "c4",
+	"nom": "Dupont",
+	"prenom": "Luc",
+	"type": "Adolescent"
+  },
+  {
+	"id": "c5",
+	"nom": "Thé",
+	"prenom": "Nicole",
+	"type": "Senior"
+  }
 ]

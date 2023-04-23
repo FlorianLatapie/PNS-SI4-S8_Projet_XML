@@ -9,7 +9,7 @@
         <!-- Start the JSON array -->
         <xsl:text>[&#xa;</xsl:text>
         <xsl:apply-templates select="//client"/>
-        <xsl:text>&#xa;]</xsl:text>
+        <xsl:text>]</xsl:text>
     </xsl:template>
 
     <xsl:template match="client">
@@ -19,17 +19,14 @@
         <xsl:variable name="type" select="@type"/>
 
         <!-- Start the JSON object for this client -->
-        <xsl:text>{&#xa;</xsl:text>
-        <xsl:text>"id": "</xsl:text><xsl:value-of select="$id"/><xsl:text>",&#xa;</xsl:text>
-        <xsl:text>"nom": "</xsl:text><xsl:value-of select="$nom"/><xsl:text>",&#xa;</xsl:text>
-        <xsl:text>"prenom": "</xsl:text><xsl:value-of select="$prenom"/><xsl:text>",&#xa;</xsl:text>
-        <xsl:text>"type": "</xsl:text><xsl:value-of select="$type"/><xsl:text>"&#xa;</xsl:text>
+        <xsl:text>  {&#xa;</xsl:text>
+        <xsl:text>&#9;"id": "</xsl:text><xsl:value-of select="$id"/><xsl:text>",&#xa;</xsl:text>
+        <xsl:text>&#9;"nom": "</xsl:text><xsl:value-of select="$nom"/><xsl:text>",&#xa;</xsl:text>
+        <xsl:text>&#9;"prenom": "</xsl:text><xsl:value-of select="$prenom"/><xsl:text>",&#xa;</xsl:text>
+        <xsl:text>&#9;"type": "</xsl:text><xsl:value-of select="$type"/><xsl:text>"&#xa;</xsl:text>
 
         <!-- End the JSON object for this client -->
-        <xsl:if test="position() != last()">
-            <xsl:text>,</xsl:text>
-        </xsl:if>
-        <xsl:text>}</xsl:text>
+        <xsl:text>  }</xsl:text>
         <xsl:if test="position() != last()">
             <xsl:text>,</xsl:text>
         </xsl:if>
