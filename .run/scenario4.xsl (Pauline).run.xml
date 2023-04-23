@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="scenario4.xsl (Pauline)" type="XSLT" factoryName="XSLT" folderName="Pauline">
+    <option name="myOutputFile" value="C:\Users\pdevi\IdeaProjects\XML\XML\Scénarios\output4.xml" />
+    <option name="myOpenOutputFile" value="false" />
+    <option name="myOpenInBrowser" value="false" />
+    <option name="mySmartErrorHandling" value="true" />
+    <option name="myRunnerPort" value="34873" />
+    <option name="myVmArguments" value="" />
+    <option name="myWorkingDirectory" value="" />
+    <option name="myModule" />
+    <option name="myJdk" />
+    <XsltFile url="file://$PROJECT_DIR$/XML/Scénarios/scenario4.xsl" />
+    <XmlFile url="file://$PROJECT_DIR$/XML/sejour_final.xml" />
+    <parameters />
+    <OutputType value="CONSOLE" save-to-file="true" />
+    <FileType name="HTML" />
+    <JdkChoice value="FROM_MODULE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

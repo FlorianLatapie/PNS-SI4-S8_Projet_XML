@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="scenario3.xsl" type="XSLT" factoryName="XSLT">
+  <configuration default="false" name="scenario3.xsl (Florian)" type="XSLT" factoryName="XSLT" folderName="Florian">
     <option name="myOutputFile" value="C:\Users\Florian\Documents\GitHub\XML\XML\Scénarios\output3.html" />
     <option name="myOpenOutputFile" value="false" />
     <option name="myOpenInBrowser" value="true" />
